@@ -129,7 +129,7 @@ ClientBin/
 *.publishsettings
 orleans.codegen.cs
 
-
-
+#Bootstrap
+wwwroot/
 
 
