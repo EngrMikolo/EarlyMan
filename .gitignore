@@ -130,6 +130,8 @@ ClientBin/
 orleans.codegen.cs
 
 #Bootstrap
-wwwroot/
+wwwroot/font-awesome
+wwwroot/TempImages
+wwwroot/twitter-bootstrap
 
 
