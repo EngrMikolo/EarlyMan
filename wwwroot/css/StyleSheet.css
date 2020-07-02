@@ -1,0 +1,43 @@
+﻿/*3DPrint Nav*/ 
+ li{
+    display: inline;
+}
+img {
+    display: inline;
+}
+a:hover {
+    color: red;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+}
+
+/*Header*/
+header {
+    background: #ffffff;
+    color: azure;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #00ff21 2px ridge;
+}
+
+    header nav {
+        float: right;
+        text-align: right;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 90%;
+    }
+
+    header li {
+        display: inline;
+    }
+
+
+        header a:hover {
+            font-weight: bolder;
+            color: darkseagreen;
+        }
+     
