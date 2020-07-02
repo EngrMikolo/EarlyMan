@@ -1,48 +1,24 @@
 ﻿@model IEnumerable<Print>
-@*<html>
-    <head>
-        <meta name="viewport" content="width=device-width" />
-        <meta name="description" content="Affordable 3d printing" />
-        <meta name="keywords" content="3d printing, materials, PETA, professional printing" />
-        <meta name="author" content="Okeke David" />
-        <meta charset="utf-8" />
-
-        <title> TeleFin 3D | Welcome   </title>
-        <link href="~/css/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <div id="branding">
-                    <h1><span class="highlight">TeleFin</span> 3D</h1>
-                </div>
-                <nav>
-
-                    <ul>
-
-                        <li><a class="highlight" asp-action="index.html">Home</a></li>
-                        <li><a asp-action="index.html">Sign in</a></li>
-                        <li><a asp-action="index.html">Cart</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>*@
 <section class="showcase">
 
-    <div id="3DPrints">
+    <div class="ImageS">
         <hr />
         <h1>Prints</h1>
-        <ul id="container">
-            @foreach (var print in Model)
-            {
+        <div class="container">
+            <nav>
+                <ul>
+                    @foreach (var print in Model)
+                    {
 
-                <li style="align-content:stretch">
-                    <div>@print.Name</div>
-                    <div class="printDisplay"><a href="#"><img href = @print.Location alt="No Image"/></a></div>
-                    <div class ="printprice">@print.Price.ToString("c2")</div>
-                </li>
-            }
-        </ul>
+                        <li>
+                            <div>@print.Name</div>
+                            <div class="printDisplay"><a href="#"><img href=@print.Location alt="No Image" /></a></div>
+                            <div class="printprice">@print.Price.ToString("c2")</div>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        </div>
         <hr />
     </div>
 
@@ -69,33 +45,3 @@
         <hr />
     </div>
 </section>
-
-@*<section id="newsletter">
-        <div class="container">
-            <h1>Subscribe To our Newsletter</h1>
-            <form action="/" method="post">
-                <input type="email" name="name" value="" placeholder="Enter Email..." />
-                <button asp-action="POST" class="button_1">Subscribe</button>
-            </form>
-        </div>
-    </section>*@
-
-@*<section id="boxes">
-        <div class="container">
-            <div class="box">
-                <img src="" alt="Alternate Text" />
-                <h3>3D Modelling</h3>
-                <p>lhsldk Syyls filsdjkl hsdilvnlds oiulsdvnllhslvnoihsvnldnsnvlslndlkvnlkh isdklvnlskdnvll adlknlsdk vlhdl dvlsd lk</p>
-            </div>
-            <div class="box">
-                <h3>Photoscanning</h3>
-                <p>lhsldk Syyls filsdjkl hsdilvnlds oiulsdvnllhslvnoihsvnldnsnvlslndlkvnlkh isdklvnlskdnvll adlknlsdk vlhdl dvlsd lk</p>
-            </div>
-            <div class="box">
-                <h3>3D Printing</h3>
-                <p>lhsldk Syyls filsdjkl hsdilvnlds oiulsdvnllhslvnoihsvnldnsnvlslndlkvnlkh isdklvnlskdnvll adlknlsdk vlhdl dvlsd lk</p>
-            </div>
-        </div>
-    </section>*@
-@*</body>
-    </html>*@
