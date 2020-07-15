@@ -1,7 +1,5 @@
 ﻿/*3DPrint Nav*/ 
- li{
-    display: inline;
-}
+
 img {
     display: inline;
 }
@@ -17,7 +15,7 @@ a:hover {
 
 /*Header*/
 header {
-    background: #ffffff;
+    
     color: azure;
     padding-top: 30px;
     min-height: 70px;
@@ -26,18 +24,22 @@ header {
 
     header nav {
         float: right;
-        text-align: right;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        width: 90%;
+        text-align: center;
+        font-family: Verdana;
+        width:20em;
+        background:goldenrod;
     }
 
     header li {
         display: inline;
+        padding: 0 0 0 0;
     }
 
-
-        header a:hover {
+        header  a:hover {
             font-weight: bolder;
-            color: darkseagreen;
+            color: blue;
         }
-     
+ul
+{
+    padding: 0 0 0 0;
+}
