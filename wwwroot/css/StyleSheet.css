@@ -1,13 +1,16 @@
 ﻿/*3DPrint Nav*/
-body{
-    background-color:lightslategrey;
+body {
+    background-color: black;
+    color: white;
 }
+
+
 img {
     display: inline;
 }
 
 a:hover {
-    color:aquamarine;
+    color: aquamarine;
 }
 
 .container {
@@ -21,7 +24,8 @@ header {
     color: azure;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #00ff21 2px ridge;
+    height: 200px;
+    background-color: white;
 }
 
     header nav {
@@ -29,7 +33,7 @@ header {
         text-align: center;
         font-family: Verdana;
         width: 20em;
-        background:red;
+        background: white;
     }
 
     header li {
@@ -38,8 +42,8 @@ header {
     }
 
     header a:hover {
-        font-weight: bolder;
-        color: blue;
+       
+        color: black;
     }
 
 ul {
