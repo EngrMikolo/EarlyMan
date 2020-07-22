@@ -1,48 +1,48 @@
 ﻿@model IEnumerable<Print>
-<section class="showcase">
+    <section class="showcase">
 
-    <div class="ImageS">
-        <hr />
-        <h1>Prints</h1>
-        <div class="container">
-            <nav>
-                <ul>
-                    @foreach (var print in Model)
-                    {
+        <div class="ImageS">
+            <hr />
+            <h1>Prints</h1>
+            <div class="container">
+                <nav>
+                    <ul>
+                        @foreach (var print in Model)
+                        {
 
                         <li>
                             <div>@print.Name</div>
                             <div class="printDisplay"><a href="#"><img href=@print.Location alt="No Image" /></a></div>
                             <div class="printprice">@print.Price.ToString("c2")</div>
                         </li>
-                    }
+                        }
+                    </ul>
+                </nav>
+            </div>
+            <hr />
+        </div>
+
+        <div id="Prints">
+            <hr />
+            <h1>Artwork</h1>
+
+            <p aria-label="Description">
+                I want to tell a story about the life of the average Nigerian,
+                the teargs the joys the national average, the glorification
+                of money regardless of where it comes from, the national idea of
+                corruption and why we are where we are today.
+            </p>
+            <hr />
+        </div>
+
+        <div id="3DPrints">
+            <hr />
+            <h1>Services</h1>
+            <div class="Services">
+                <ul id="OtherServices">
+                    <li><a href="#"></a></li>
                 </ul>
-            </nav>
+            </div>
+            <hr />
         </div>
-        <hr />
-    </div>
-
-    <div id="Prints">
-        <hr />
-        <h1>Artwork</h1>
-        
-        <p aria-label="Description">
-            I want to tell a story about the life of the average Nigerian,
-            the teargs the joys the national average, the glorification
-            of money regardless of where it comes from, the national idea of
-            corruption and why we are where we are today.
-        </p>
-        <hr />
-    </div>
-
-    <div id="3DPrints">
-        <hr />
-        <h1>Services</h1>
-        <div class="Services">
-            <ul id="OtherServices">
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-        <hr />
-    </div>
-</section>
+    </section>
