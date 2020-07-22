@@ -8,20 +8,8 @@ This codebase was created for the purpose of encouraging the sale of local artwo
 ## How it works
 
 This is using ASP.NET Core with:
-
-- CQRS and [MediatR](https://github.com/jbogard/MediatR)
-  - [Simplifying Development and Separating Concerns with MediatR](https://blogs.msdn.microsoft.com/cdndevs/2016/01/26/simplifying-development-and-separating-concerns-with-mediatr/)
-  - [CQRS with MediatR and AutoMapper](https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/)
-  - [Thin Controllers with CQRS and MediatR](https://codeopinion.com/thin-controllers-cqrs-mediatr/)
-- [AutoMapper](http://automapper.org)
-- [Fluent Validation](https://github.com/JeremySkinner/FluentValidation)
-- Feature folders and vertical slices
-- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/) on SQLite for demo purposes. Can easily be anything else EF Core supports. Open to porting to other ORMs/DBs.
-- Built-in Swagger via [Swashbuckle.AspNetCore](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)
-- [Bullseye](https://github.com/adamralph/bullseye) for building!
-- JWT authentication using [ASP.NET Core JWT Bearer Authentication](https://github.com/aspnet/Security/tree/master/src/Microsoft.AspNetCore.Authentication.JwtBearer).
-
-This basic architecture is based on this reference architecture: [https://github.com/jbogard/ContosoUniversityCore](https://github.com/jbogard/ContosoUniversityCore)
+[Entity Framework Core](https://docs.microsoft.com/en-us/ef/) on SQLite for demo purposes. Can easily be anything else EF Core supports. Open to porting to other ORMs/DBs, but EFCore is used because of 
+it good interop with VS2019.
 
 ## Getting started
 
