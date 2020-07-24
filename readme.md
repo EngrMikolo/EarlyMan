@@ -3,7 +3,7 @@
 EarlyMan Inc serves as a portfolio website. It tries as much as possible to adhere to best practices.
 
 
-This codebase was created for the purpose of encouraging the sale of local artwork(my other passion ). It is a fullstack application built with ASP.NET Core( with Feature orientation) including CRUD operations, authentication, routing, deployment, security, pagination, unit-testing e.t.c.
+This codebase was created for the purpose of encouraging the sale of local artwork(my other passion ). It is a fullstack application built with ASP.NET Core( with Feature orientation) including CRUD operations, authentication, routing, deployment, security, pagination, unit-testing e.t.c.(coming-soon)
 
 ## How it works
 
