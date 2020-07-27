@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 
 namespace Telefin.Models
@@ -8,19 +7,23 @@ namespace Telefin.Models
     {
         public IQueryable<Print> Prints => new List<Print>
         {
-            new Print{Name = "Monkey", Price = 200000M, Location = ReturnFilePath("Monkey")},
-            new Print{Name = "Lion", Price = 40000M, Location = ReturnFilePath("Lion")},
-            new Print{Name = "Snake", Price = 20000M, Location = ReturnFilePath("Snake")},
-            new Print{Name = "Tiger", Price = 20000M, Location = ReturnFilePath("Tiger")},
-            new Print{Name = "Horse", Price = 20000M, Location = ReturnFilePath("Horse")}
-
+            new Print{Name = "Einstein", Price = 5000M, 
+                Description = "Albert Einstein was a German-born theoretical physicist who developed " +
+                "the theory of relativity, one of the two pillars of modern physics " +
+                "(alongside quantum mechanics).: " +
+                "His work is also known for its influence on the philosophy of science",
+                Location = ""},
+             new Print{Name = "Sealing Wand", Price = 5000M, 
+                 Description = "The Sealing Wand also simply referred to as the Staff," +
+                 " is a dark pink magical staff or wand about a meter in length.",
+                Location = ""},
+              new Print{Name = "Groot", Price = 3000M, 
+                  Description = "I am Groot",
+                Location = ""},
+               new Print{Name = "Hulk", Price = 15000M, Description = "Smash",
+                Location = ""},
+            new Print{Name = "Castle", Price = 8000M, Description = "",
+                Location = ""}
         }.AsQueryable();
-
-        private static  string ReturnFilePath(string fileName)
-        {
-            // Method should return the location of the image.
-            // Take string from Prints
-            return Path.Combine("\\wwwroot\\TempImages", $"{fileName}");
-        }
     }
 }

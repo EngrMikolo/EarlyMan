@@ -10,6 +10,7 @@ namespace Telefin.Models
         public List<string> MaterialType{ get; set; }
         public List<int> Sizes { get; set; }
         public string Categories { get; set; }
+        public string Description { get; set; }
         public string Location { get; set; }
     }
 }
