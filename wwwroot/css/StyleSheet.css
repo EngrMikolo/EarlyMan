@@ -5,10 +5,6 @@ body {
 }
 
 
-img {
-    display: inline;
-}
-
 a:hover {
     color: aquamarine;
 }
@@ -17,6 +13,10 @@ a:hover {
     margin: auto;
     width: 80%;
     overflow: hidden;
+}
+
+a.printDisplay{
+    float:right;
 }
 
 /*Header*/
@@ -40,12 +40,17 @@ header {
         display: inline;
         padding: 0 0 0 0;
     }
-
     header a:hover {
-       
         color: black;
     }
 
-ul {
-    padding: 0 0 0 0;
+   nav ul{
+        list-style-type:none;
+    }
+.container .dPrints div{
+    display:inline;
 }
+.container .dPrints li {
+    display: inline;
+}
+   

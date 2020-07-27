@@ -5,16 +5,18 @@
             <hr />
             <h1>Prints</h1>
             <div class="container">
-                <nav>
+                <nav class="dPrints">
                     <ul>
                         @foreach (var print in Model)
                         {
+                           
 
-                        <li>
-                            <div>@print.Name</div>
-                            <div class="printDisplay"><a href="#"><img href=@print.Location alt="No Image" /></a></div>
-                            <div class="printprice">@print.Price.ToString("c2")</div>
-                        </li>
+                            <li>
+                                <div>@print.Name</div>
+                                <a href="#"><img href=@print.Location></a>
+                                <div class="printprice">@print.Price.ToString("c2")</div>
+                            </li>
+
                         }
                     </ul>
                 </nav>
@@ -26,22 +28,23 @@
             <hr />
             <h1>Artwork</h1>
 
-            <p aria-label="Description">
-                <h1>
+            <p>
+                <h2>
                    Shop for artwork here.
-                </h1>
+                </h2>
             </p>
             <hr />
         </div>
 
-        <div id="3DPrints">
+        <footer>
             <hr />
             <h1>Services</h1>
             <div class="Services">
+
                 <ul id="OtherServices">
                     <li><a href="#"></a></li>
                 </ul>
             </div>
             <hr />
-        </div>
+        </footer>
     </section>
