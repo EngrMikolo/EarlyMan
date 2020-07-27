@@ -1,13 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.Extensions.DependencyInjection;
-using System.Net.Http.Headers;
 
 namespace Telefin.Models
 {
-    public class ApplicationDBContext: DbContext
+    public class ApplicationDbContext: DbContext
     {
-        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
                 : base(options) { }
         public DbSet<Print>Prints { get; set; }
     }

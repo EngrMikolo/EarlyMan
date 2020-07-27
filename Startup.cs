@@ -16,7 +16,7 @@ namespace Telefin
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IPrintRepository, MockRepo>();
-            services.AddDbContext<ApplicationDBContext>(options =>
+            services.AddDbContext<ApplicationDbContext>(options =>
                  options.UseSqlServer(
                      Configuration["Data:3dProdLocation:ConnectionString"]));
 
