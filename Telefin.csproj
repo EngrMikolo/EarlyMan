@@ -5,17 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
-    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet"
-    Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Views\Home\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Product_Images\Castle.jpg" />
+    <None Include="wwwroot\Product_Images\Einstein.jpg" />
+    <None Include="wwwroot\Product_Images\Groot.jpg" />
+    <None Include="wwwroot\Product_Images\Hulk.jpg" />
+    <None Include="wwwroot\Product_Images\SealingWand.jpg" />
+    <None Include="wwwroot\Product_Images\Valkyrie.jpg" />
   </ItemGroup>
 
 </Project>
