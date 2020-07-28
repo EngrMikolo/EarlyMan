@@ -4,10 +4,6 @@ body {
     color: white;
 }
 
-img{
-    width: 200px; height:200px;
-    display:inline;
-}
 
 a:hover {
     color: aquamarine;

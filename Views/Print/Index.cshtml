@@ -9,11 +9,11 @@
                     <ul>
                         @foreach (var print in Model)
                         {
-
+                           
 
                             <li>
                                 <div>@print.Name</div>
-                               <img src="~/Product_Images/@string.Concat(print.Location + ".jpg")" />
+                                <a href="#"><img href=@print.Location></a>
                                 <div class="printprice">@print.Price.ToString("c2")</div>
                             </li>
 
