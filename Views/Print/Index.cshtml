@@ -13,7 +13,7 @@
 
                             <li>
                                 <div>@print.Name</div>
-                                <a href="#"><img href=@print.Location></a>
+                                <a href="#"><img src="~/Product_Images/@string.Concat(print.Location,".jpg")"></a>
                                 <div class="printprice">@print.Price.ToString("c2")</div>
                             </li>
 

@@ -4,6 +4,11 @@ body {
     color: white;
 }
 
+img {
+    width: 200px;
+    height: 200px;
+    display: inline;
+}
 
 a:hover {
     color: aquamarine;
@@ -15,8 +20,8 @@ a:hover {
     overflow: hidden;
 }
 
-a.printDisplay{
-    float:right;
+a.printDisplay {
+    float: right;
 }
 
 /*Header*/
@@ -40,17 +45,19 @@ header {
         display: inline;
         padding: 0 0 0 0;
     }
+
     header a:hover {
         color: black;
     }
 
-   nav ul{
-        list-style-type:none;
-    }
-.container .dPrints div{
-    display:inline;
+nav ul {
+    list-style-type: none;
 }
+
+.container .dPrints div {
+    display: inline;
+}
+
 .container .dPrints li {
     display: inline;
 }
-   
