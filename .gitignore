@@ -129,14 +129,6 @@ ClientBin/
 *.publishsettings
 orleans.codegen.cs
 
-#Bootstrap
-wwwroot/TempImages
-/wwwroot/lib/twitter-bootstrap/css
-/wwwroot/lib/twitter-bootstrap/js
-/wwwroot/font-awesome/css
-/wwwroot/font-awesome/fonts
-/wwwroot/twitter-bootstrap/css
-/wwwroot/twitter-bootstrap/js
 
 #Notes
 /Notes.txt
