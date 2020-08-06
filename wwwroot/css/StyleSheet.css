@@ -1,58 +1,22 @@
 ﻿body {
+    font-family: 'Nunito', sans-serif;
+}
+
+footer {
     background-color: black;
-    color: white;
 }
 /*Header*/
 
 /*Drop Down*/
-.dropdown {
-    display: inline-block;
-    float: right;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: ghostwhite;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 /*End dropdown style Drop Down*/
 /*End of Header*/
-
-img {
-    width: 820px;
-    height: 547px;
-    display: inline;
+.bg-navbar {
+    background: -webkit-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
+    background: -o-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
+    background: -moz-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
+    background: linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
 }
 
 a:hover {
     color: aquamarine;
-}
-
-.container {
-    width: 90%;
-}
-
-p, span {
-    color: black;
-}
-
-a.printDisplay {
-    float: right;
-}
-
-.dPrints div {
-    display: inline;
-}
-
-.dPrints li {
-    display: inline;
-    list-style-type: none;
 }
