@@ -131,7 +131,7 @@ orleans.codegen.cs
 
 #Bootstrap
 wwwroot/TempImages
-/wwwroot/lib/twitter-bootstrap/css
+/wwwroot/lib/font-awesome
 /wwwroot/lib/bootstrap-4.5.2
 
 
