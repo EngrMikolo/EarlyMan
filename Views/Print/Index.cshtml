@@ -1,50 +1,50 @@
 ﻿@model IEnumerable<Print>
-    <section class="showcase">
 
-        <div class="ImageS">
-            <hr />
-            <h1>Prints</h1>
-            <div class="container">
-                <nav class="dPrints">
-                    <ul>
-                        @foreach (var print in Model)
-                        {
-                           
+<section class="showcase">
 
-                            <li>
-                                <div>@print.Name</div>
-                                <a href="#"><img src="~/Product_Images/@string.Concat(print.Location,".jpg")"></a>
-                                <div class="printprice">@print.Price.ToString("c2")</div>
-                            </li>
+    <div class="container">
+        <hr />
 
-                        }
-                    </ul>
-                </nav>
+        <div>
+            <h1>Toys</h1>
+
+            <div id="carouselEX" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/Product_Images/Castle.jpg" class="d-block w-100 h-75" alt="Image 1" />
+                    </div>
+                    @foreach (var item in Model)
+                    {
+                        <div class="carousel-item">
+                            <img src="~/Product_Images/@string.Concat(item.Location,".jpg")" class="d-block w-100" alt="...">
+                        </div>
+                    }
+                </div>
             </div>
-            <hr />
         </div>
+        <hr />
+    </div>
 
-        <div id="Prints">
-            <hr />
-            <h1>Artwork</h1>
+    <div class="container">
+        <hr />
+        <h1>Artwork</h1>
 
-            <p>
-                <h2>
-                   Shop for artwork here.
-                </h2>
-            </p>
-            <hr />
+        <p>
+            <h2>
+                Shop for artwork here.
+            </h2>
+        </p>
+        <hr />
+    </div>
+
+    <div class="container">
+        <hr />
+        <h1>Services</h1>
+        <div>
+            <ul>
+                <li style="list-style:none"><a href="#"></a></li>
+            </ul>
         </div>
-
-        <footer>
-            <hr />
-            <h1>Services</h1>
-            <div class="Services">
-
-                <ul id="OtherServices">
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
-            <hr />
-        </footer>
-    </section>
+        <hr />
+    </div>
+</section>

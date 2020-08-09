@@ -1,5 +1,11 @@
 ﻿body {
     font-family: 'Nunito', sans-serif;
+    padding-top: 50px
+}
+
+img {
+    width: 768px;
+    height: 768px;
 }
 
 footer {

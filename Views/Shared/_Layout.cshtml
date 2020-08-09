@@ -1,51 +1,64 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0,
+    <meta name="viewport" content="width=device-width, initial-scale =1,
           shrink-to-fit = no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="Affordable 3d printing" />
     <meta name="keywords" content="3D printing, materials, PETA, professional printing" />
     <meta name="author" content="Chihurumnanya Agwuocha" />
-    <link href="~/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/bootstrap-4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" asp-href-include="/lib/font-awesome\css\font-awesome.css" />
     <link href="~/css/StyleSheet.css" rel="stylesheet" />
     <link href="~/favicon.ico" rel="icon" />
     <title> EarlyMan | Welcome   </title>
 </head>
 <body>
-    <header>
-        <div>
-            <nav role="navigation">
-                <ul>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Customer Service</a>
-                    </li>
-                    <li>
-                        <a href="#">Sign in</a>
-                    </li>
-                </ul>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">EarlyMan</a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-    </header>
+    </nav>
+
     <div>
         @RenderBody()
     </div>
     <footer>
         <div class="Links">
-            <ul id="bottomLink">
-                <li><a href="#">content</a></li>
-                <li><a href="#">content</a></li>
-                <li><a href="#">content</a></li>
-                <li><a href="#">content</a></li>
-                <li><a href="#">content</a></li>
-                <li><a href="#">content</a></li>
+            <ul>
+                @for (int i = 0; i < 5; i++)
+                {
+                    <li style="list-style:none; display:inline">
+                        <a href="#">content</a>
+                    </li>
+                }
             </ul>
         </div>
         <div> Earlyman Inc.&copy; All rights reserved.</div>
     </footer>
+    <script src="~/lib/jquery/jquery.slim.min.js"></script>
+    <script src="~/lib/popper.js/umd/popper.min.js"></script>
+    <script src="~/lib/bootstrap-4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
