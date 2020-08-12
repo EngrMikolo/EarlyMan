@@ -18,9 +18,11 @@ namespace Telefin
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(
             Configuration["Data:3dProdLocation:ConnectionString"]));
-            services.AddTransient<IPrintRepository, EFPrintRepository>();
+            services.AddTransient<IPrintRepository, EFCarouselRepository>();
+            services.AddTransient<IPrintRepository, EFRegularPrintRepository>();
             services.AddMvc();
         }
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app)
         {
@@ -33,7 +35,7 @@ namespace Telefin
                     name: "default",
                     template: "{controller=Print}/{action=Index}");
             });
-            SeedData.EnsurePopulated(app);
+            // SeedData.EnsurePopulated(app);
         }
     }
 }

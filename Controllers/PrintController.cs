@@ -12,9 +12,10 @@ namespace Telefin.Controllers
             repository = repo;
         }
 
-        public ViewResult Index()
-        {
-            return View(repository.Prints);
-        }
+        public ViewResult Index() => View(repository.Prints);
+
+        public ViewResult ProductShowcase() => View(repository.Prints);
+
+        public ViewResult ItemSummary() => View();
     }
 }

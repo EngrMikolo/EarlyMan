@@ -10,6 +10,24 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Infrastructure\TagHelpers\" />
+    <Folder Include="Models\ViewModels\" />
     <Folder Include="Views\Home\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\carousel\Castle.jpg" />
+    <None Include="wwwroot\assets\carousel\Einstein.jpg" />
+    <None Include="wwwroot\assets\carousel\Groot.jpg" />
+    <None Include="wwwroot\assets\carousel\Hulk.jpg" />
+    <None Include="wwwroot\assets\carousel\SealingWand.jpg" />
+    <None Include="wwwroot\assets\carousel\Valkyrie.jpg" />
+    <None Include="wwwroot\assets\ShowCase\Img1.jpg" />
+    <None Include="wwwroot\assets\ShowCase\Img2.jpg" />
+    <None Include="wwwroot\assets\ShowCase\img3.jpg" />
+    <None Include="wwwroot\assets\ShowCase\img4.jpg" />
+    <None Include="wwwroot\assets\ShowCase\img6.jpg" />
+    <None Include="wwwroot\assets\ShowCase\img7.jpg" />
+    <None Include="wwwroot\assets\ShowCase\img8.jpg" />
   </ItemGroup>
 </Project>
