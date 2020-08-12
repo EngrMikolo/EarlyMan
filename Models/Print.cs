@@ -13,6 +13,6 @@ namespace Telefin.Models
         //Sizes { get;}
         public string Categories { get; set; }
         public string Description { get; set; }
-        public string Location { get; set; }
+        public string Location { get; set; } 
     }
 }
