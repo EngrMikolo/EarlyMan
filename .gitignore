@@ -131,7 +131,6 @@ orleans.codegen.cs
 
 #Bootstrap
 wwwroot/TempImages
-/wwwroot
-
+wwwroot/lib
 #Notes
 /Notes.txt
