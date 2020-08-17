@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Telefin.Models
 {
-    public class MockRepo : IPrintRepository
+    public class MockRepo : Promotion
     {
         public IQueryable<Print> Prints => new List<Print>
         {

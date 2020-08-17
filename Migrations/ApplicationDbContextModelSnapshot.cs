@@ -37,7 +37,25 @@ namespace Telefin.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Print");
+                    b.ToTable("Prints");
+                });
+
+            modelBuilder.Entity("Telefin.Models.Promotion", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("Link");
+
+                    b.Property<string>("Location");
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Promos");
                 });
 #pragma warning restore 612, 618
         }

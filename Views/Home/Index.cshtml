@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Print>
+﻿@model IEnumerable<Promotion>
 
 <section class="showcase">
 
@@ -9,12 +9,12 @@
         <div id="carouselEX" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/assets/carousel/Castle.jpg" class="d-block w-100" alt="Image 1" />
+                    <img src="/assets/Promotions/Castle.jpg" class="d-block w-100" alt="Image 1" />
                 </div>
                 @foreach (var item in Model)
                 {
                     <div class="carousel-item">
-                        <a href="#"><img src="/assets/carousel/@string.Concat(item.Location,".jpg")" class="d-block w-100"></a>
+                        <a href="#"><img src="/assets/Promotions/@string.Concat(item.Location,".jpg")" class="d-block w-100"></a>
                     </div>
                 }
             </div>

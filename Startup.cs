@@ -18,8 +18,8 @@ namespace Telefin
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(
             Configuration["Data:3dProdLocation:ConnectionString"]));
-            services.AddTransient<IPrintRepository, EFCarouselRepository>();
-            services.AddTransient<IPrintRepository, EFRegularPrintRepository>();
+            services.AddTransient<IPromotionRepository, EFPromotionRepository>();
+            services.AddTransient<IPrintRepository, EFPrintRepository>();
             services.AddMvc();
         }
 
@@ -33,9 +33,9 @@ namespace Telefin
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Print}/{action=Index}");
+                    template: "{controller=Home}/{action=Index}");
             });
-            // SeedData.EnsurePopulated(app);
+            SeedData.EnsurePopulated(app);
         }
     }
 }

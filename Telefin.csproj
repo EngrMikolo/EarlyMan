@@ -5,29 +5,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\assets\carousel\**" />
+    <Compile Remove="wwwroot\assets\ShowCase\**" />
+    <Content Remove="wwwroot\assets\carousel\**" />
+    <Content Remove="wwwroot\assets\ShowCase\**" />
+    <EmbeddedResource Remove="wwwroot\assets\carousel\**" />
+    <EmbeddedResource Remove="wwwroot\assets\ShowCase\**" />
+    <None Remove="wwwroot\assets\carousel\**" />
+    <None Remove="wwwroot\assets\ShowCase\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Infrastructure\TagHelpers\" />
-    <Folder Include="Models\ViewModels\" />
-    <Folder Include="Views\Home\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\assets\carousel\Castle.jpg" />
-    <None Include="wwwroot\assets\carousel\Einstein.jpg" />
-    <None Include="wwwroot\assets\carousel\Groot.jpg" />
-    <None Include="wwwroot\assets\carousel\Hulk.jpg" />
-    <None Include="wwwroot\assets\carousel\SealingWand.jpg" />
-    <None Include="wwwroot\assets\carousel\Valkyrie.jpg" />
-    <None Include="wwwroot\assets\ShowCase\Img1.jpg" />
-    <None Include="wwwroot\assets\ShowCase\Img2.jpg" />
-    <None Include="wwwroot\assets\ShowCase\img3.jpg" />
-    <None Include="wwwroot\assets\ShowCase\img4.jpg" />
-    <None Include="wwwroot\assets\ShowCase\img6.jpg" />
-    <None Include="wwwroot\assets\ShowCase\img7.jpg" />
-    <None Include="wwwroot\assets\ShowCase\img8.jpg" />
   </ItemGroup>
 </Project>

@@ -19,69 +19,62 @@ namespace Telefin.Models
 
             context.Database.Migrate();
 
-            if (!context.Carousel.Any())
+            if (!context.Promos.Any())
             {
-                context.Carousel.AddRange(
-                    new Print
+                context.Promos.AddRange(
+                    new Promotion
                     {
                         Name = "SealingWand",
-                        Price = 50000,
                         Description = "A magic wand of power 10",
-                        Categories = "Toy",
                         Id = GenerateGUID(),
                         Location = "SealingWand"
                     },
-                    new Print
+                    new Promotion
                     {
                         Name = "Castle",
-                        Price = 20000,
+
                         Description = "Replacement chess piece",
-                        Categories = "Game",
                         Id = GenerateGUID(),
                         Location = "Castle"
                     },
-                    new Print
+                    new Promotion
                     {
                         Name = "Einstein",
-                        Price = 40000,
-                        Description = "Science Genius with nice hair",
-                        Categories = "Toy",
                         Id = GenerateGUID(),
+                        Description = "Science Genius with nice hair",
+
                         Location = "Einstein"
                     },
-                    new Print
+                    new Promotion
                     {
                         Name = "Groot",
-                        Price = 15000,
-                        Description = "Cutie from marvel cinematic universe",
-                        Categories = "Toy",
                         Id = GenerateGUID(),
+                        Description = "Cutie from marvel cinematic universe",
+
                         Location = "Groot"
                     },
-                    new Print
+                    new Promotion
                     {
                         Name = "Hulk",
-                        Price = 50000,
-                        Description = "Green, always angry, strong",
-                        Categories = "Toy",
                         Id = GenerateGUID(),
+                        Description = "Green, always angry, strong",
+
                         Location = "Hulk"
                     },
-                    new Print
+                    new Promotion
                     {
                         Name = "Valkyrie",
-                        Price = 80000,
-                        Description = "Fighter Jet",
-                        Categories = "Toy",
                         Id = GenerateGUID(),
+                        Description = "Fighter Jet",
+
                         Location = "Valkyrie"
                     }
 
                     );
             }
-            if (!context.RegularPrints.Any())
+            if (!context.Prints.Any())
             {
-                context.RegularPrints.AddRange(
+                context.Prints.AddRange(
                     new Print
                     {
                         Name = "Covid19_Joke",

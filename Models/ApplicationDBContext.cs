@@ -7,7 +7,7 @@ namespace Telefin.Models
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
                 : base(options) { }
 
-        public DbSet<Print> RegularPrints { get; set; }
-        public DbSet<Print> Carousel { get; set; }
+        public DbSet<Print> Prints { get; set; }
+        public DbSet<Promotion> Promos { get; set; }
     }
 }

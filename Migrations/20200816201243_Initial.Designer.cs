@@ -11,7 +11,7 @@ using Telefin.Models;
 namespace Telefin.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200728065559_Initial")]
+    [Migration("20200816201243_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,6 +39,24 @@ namespace Telefin.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Prints");
+                });
+
+            modelBuilder.Entity("Telefin.Models.Promotion", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("Link");
+
+                    b.Property<string>("Location");
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Promos");
                 });
 #pragma warning restore 612, 618
         }
