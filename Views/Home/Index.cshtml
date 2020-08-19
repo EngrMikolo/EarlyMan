@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Promotion>
+﻿@model Telefin.Models.ViewModels.HomepageViewModel
 
 <section class="showcase">
 
@@ -11,7 +11,7 @@
                 <div class="carousel-item active">
                     <img src="/assets/Promotions/Castle.jpg" class="d-block w-100" alt="Image 1" />
                 </div>
-                @foreach (var item in Model)
+                @foreach (var item in Model.promotionRepository.Promos)
                 {
                     <div class="carousel-item">
                         <a href="#"><img src="/assets/Promotions/@string.Concat(item.Location,".jpg")" class="d-block w-100"></a>

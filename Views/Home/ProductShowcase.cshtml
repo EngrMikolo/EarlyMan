@@ -1,15 +1,14 @@
-﻿@*@model IEnumerable<Print>*@
-<div class="bg-info">
-    <div>Insert images of regular image prints here</div>
-</div>
+﻿@model Telefin.Models.ViewModels.HomepageViewModel
 
 <div>
-    @*<ul>
-            @foreach (var item in Model)
-            {
-                <li>
-                    @item.Description
-                </li>
-            }
-        </ul>*@
+    <ul>
+        @foreach (var item in Model.printRepository.Prints)
+        {
+            <li class="productSC">
+                <img class="productImg" src=@string.Concat("/assets/Products/", item.Location + ".jpg") />
+
+                @item.Description
+            </li>
+        }
+    </ul>
 </div>

@@ -1,22 +1,29 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Telefin.Models;
+using Telefin.Models.ViewModels;
 
 namespace Telefin.Controllers
 {
     public class HomeController : Controller
     {
-        private IPromotionRepository promotionRepository;
-        private IPrintRepository printRepository;
+        private IPrintRepository printRepo;
+        private IPromotionRepository promoRepo;
+        private HomepageViewModel homePageVM;
 
-        public HomeController(IPrintRepository printRepo, IPromotionRepository promoRepo)
+        public HomeController(IPrintRepository print, IPromotionRepository promo)
         {
-            printRepository = printRepo;
-            promotionRepository = promoRepo;
+            printRepo = print;
+            promoRepo = promo;
+            homePageVM = new HomepageViewModel
+            {
+                printRepository = printRepo,
+                promotionRepository = promoRepo
+            };
         }
 
-        public ViewResult Index() => View(promotionRepository.Promos);
+        public ViewResult Index() => View(homePageVM);
 
-        public ViewResult ProductShowcase() => View(printRepository.Prints);
+        public ViewResult ProductShowcase() => View(homePageVM);
 
         public ViewResult ItemSummary() => View();
     }

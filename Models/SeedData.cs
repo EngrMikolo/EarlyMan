@@ -72,7 +72,7 @@ namespace Telefin.Models
 
                     );
             }
-            if (!context.Prints.Any())
+            else if (!context.Prints.Any())
             {
                 context.Prints.AddRange(
                     new Print

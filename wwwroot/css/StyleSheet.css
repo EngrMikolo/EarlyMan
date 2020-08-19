@@ -26,3 +26,19 @@ footer {
 a:hover {
     color: aquamarine;
 }
+
+.productImg {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px
+}
+
+.productSC {
+    display: inline;
+    list-style-type: none;
+}
+
+.productImg:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186,0.5)
+}
