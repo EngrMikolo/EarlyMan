@@ -8,9 +8,6 @@
     height: 419px;
 }
 
-footer {
-    background-color: black;
-}
 /*Header*/
 
 /*Drop Down*/
@@ -23,15 +20,19 @@ footer {
     background: linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
 }
 
-a:hover {
-    color: aquamarine;
+.productImg {
+    width: 450px;
+    height: 300px;
+    padding: 0;
+    border: 0;
+    border-radius: 0
 }
 
-.productImg {
-    width: 150px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px
+#FeCate {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .productSC {
@@ -40,5 +41,25 @@ a:hover {
 }
 
 .productImg:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186,0.5)
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186,0.5);
 }
+
+footer {
+    background-color: dodgerblue;
+}
+
+    footer > table {
+        margin: auto;
+        width: 100%;
+        color: white;
+        font-family: Arial,sans-serif;
+    }
+
+    footer td, th {
+        padding: 8px;
+        text-align: center;
+    }
+
+    footer a {
+        color: white;
+    }

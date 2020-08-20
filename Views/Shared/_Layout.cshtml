@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale =1,
-          shrink-to-fit = no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="Affordable 3d printing" />
     <meta name="keywords" content="3D printing, materials, PETA, professional printing" />
     <meta name="author" content="Chihurumnanya Agwuocha" />
+    <meta name="viewport" content="width=device-width, initial-scale =1,
+          shrink-to-fit = no" />
     <link rel="stylesheet" href="~/lib/bootstrap-4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" asp-href-include="/lib/font-awesome\css\font-awesome.css" />
     <link href="~/css/StyleSheet.css" rel="stylesheet" />
@@ -15,47 +14,43 @@
     <title> EarlyMan | Welcome   </title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <a class="navbar-brand" href="#">EarlyMan</a>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+    <div class="navbar navbar-inverse bg-inverse" role="navigation"
+         aria-label="navigation">
+        <div class="row">
+            <a class="col navbar-brand" href="#">EARLYMAN</a>
+            <div class="col-4 pull-right"></div>
         </div>
-    </nav>
+    </div>
 
     <div>
         @RenderBody()
     </div>
     <footer>
-        <div class="Links">
-            <ul>
-                @for (int i = 0; i < 5; i++)
-                {
-                    <li style="list-style:none; display:inline">
-                        <a href="#">content</a>
-                    </li>
-                }
-            </ul>
-        </div>
-        <div> Earlyman Inc.&copy; All rights reserved.</div>
+        <table>
+            <tr class="footer-table-header">
+                <th>Get to Know Us</th>
+                <th>Make Money with Us</th>
+                <th>Let Us Help You</th>
+            </tr>
+            <tr>
+                <td>Careers</td>
+                <td>About Earlyman</td>
+                <td>Investor Relations</td>
+            </tr>
+            <tr>
+                <td>Sell on Earlyman</td>
+                <td>Become an Affiliate</td>
+                <td>Advertise Your Products</td>
+            </tr>
+            <tr>
+
+                <td>COVID-19</td>
+                <td>Your Account</td>
+                <td>Your Orders</td>
+                <td><a href="mailto:davidokeke.c@gmail.com">Help</a></td>
+            </tr>
+        </table>
+        <div class="text-white text-center"> Earlyman Inc.&copy; All rights reserved.</div>
     </footer>
     <script src="~/lib/jquery/jquery.slim.min.js"></script>
     <script src="~/lib/popper.js/umd/popper.min.js"></script>

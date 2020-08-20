@@ -1,13 +1,16 @@
 ﻿@model Telefin.Models.ViewModels.HomepageViewModel
 
+<h3 id="FeCate">Featured Categories</h3>
 <div>
     <ul>
         @foreach (var item in Model.printRepository.Prints)
         {
             <li class="productSC">
-                <img class="productImg" src=@string.Concat("/assets/Products/", item.Location + ".jpg") />
+                <img class="productImg"
+                     src=@string.Concat("/assets/Products/", item.Location + ".jpg")
+                     style="width:200px; height:300px; padding:20px" />
 
-                @item.Description
+                @*@item.Description*@
             </li>
         }
     </ul>
