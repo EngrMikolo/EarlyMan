@@ -1,23 +1,68 @@
-﻿body {
-    font-family: 'Nunito', sans-serif;
-    padding-top: 50px
+﻿/*Global*/
+body {
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+nav ul {
+    float: right;
+}
+
+.container-s {
+    margin: 0px 10px 0px 60px;
+    overflow: hidden;
+}
+
+/* Header, Navigation*/
+.TempNav {
+    background-color: white;
+    min-height: 70px;
+    color: white;
+}
+
+    .TempNav a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+.navigation {
+    padding-top: 30px;
+}
+
+#branding a, h1 {
+    color: red;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+    #branding a:hover {
+        font-weight: initial;
+        color: red;
+        background: initial;
+    }
+
+.TempNav li {
+    padding: 0 20px 0 20px;
+    display: inline;
+    color: black;
+}
+
+.TempNav #branding {
+    float: left;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: red;
 }
 
 #carouselEX img {
     width: 1093.6px;
     height: 419px;
-}
-
-/*Header*/
-
-/*Drop Down*/
-/*End dropdown style Drop Down*/
-/*End of Header*/
-.bg-navbar {
-    background: -webkit-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
-    background: -o-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
-    background: -moz-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
-    background: linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
 }
 
 .productImg {

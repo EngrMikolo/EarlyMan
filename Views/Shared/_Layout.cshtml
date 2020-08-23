@@ -14,17 +14,37 @@
     <title> EarlyMan | Welcome   </title>
 </head>
 <body>
-    <div class="navbar navbar-inverse bg-inverse" role="navigation"
-         aria-label="navigation">
-        <div class="row">
-            <a class="col navbar-brand" href="#">EARLYMAN</a>
-            <div class="col-4 pull-right"></div>
+    <nav class="TempNav">
+        <div class="container-s">
+            <div id="branding">
+                <h1> <a class="branding">EARLYMAN</a></h1>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li>  <a asp-page="/CustomerSignIn">Sign in</a></li>
+                    <li> <a asp-page="/Orders">Orders</a></li>
+                    <li><i class="fa fa-shopping-basket"></i></li>
+
+                    @*<li>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>*@
+                    @*<i class="fa fa dropdown"></i>*@
+                    @*</li>*@
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <div>
         @RenderBody()
     </div>
+    <hr />
     <footer>
         <table>
             <tr class="footer-table-header">
