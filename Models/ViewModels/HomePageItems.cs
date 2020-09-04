@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Telefin.Models.ViewModels
 {
-    public class HomepageViewModel
+    public class HomepageItems
     {
         // Do I plug in the services I have created here?
         public IPrintRepository printRepository { get; set; }

@@ -8,13 +8,13 @@ namespace Telefin.Controllers
     {
         private IPrintRepository printRepo;
         private IPromotionRepository promoRepo;
-        private HomepageViewModel homePageVM;
+        private HomepageItems homePageVM;
 
         public HomeController(IPrintRepository print, IPromotionRepository promo)
         {
             printRepo = print;
             promoRepo = promo;
-            homePageVM = new HomepageViewModel
+            homePageVM = new HomepageItems
             {
                 printRepository = printRepo,
                 promotionRepository = promoRepo
@@ -26,5 +26,7 @@ namespace Telefin.Controllers
         public ViewResult ProductShowcase() => View(homePageVM);
 
         public ViewResult ItemSummary() => View();
+
+        public ViewResult SignIn() => View();
     }
 }

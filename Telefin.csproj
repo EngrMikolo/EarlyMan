@@ -21,6 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Infrastructure\TagHelpers\" />
+    <Folder Include="Infrastructure\" />
   </ItemGroup>
 </Project>
