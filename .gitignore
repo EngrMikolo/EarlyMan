@@ -129,8 +129,3 @@ ClientBin/
 *.publishsettings
 orleans.codegen.cs
 
-#Bootstrap
-wwwroot/TempImages
-wwwroot/lib
-#Notes
-/Notes.txt
