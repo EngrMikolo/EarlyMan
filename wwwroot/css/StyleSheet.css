@@ -26,8 +26,13 @@ nav ul {
         color: black;
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 12px;
+        font-weight: bold;
     }
+
+        .TempNav a:hover {
+            color: red;
+        }
 
 .navigation {
     padding-top: 30px;
@@ -40,25 +45,40 @@ nav ul {
 }
 
     #branding a:hover {
-        font-weight: initial;
         color: red;
         background: initial;
     }
 
 .TempNav li {
-    padding: 0 20px 0 20px;
     display: inline;
     color: black;
+    padding: 5px;
 }
 
 .TempNav #branding {
     float: left;
 }
 
-nav a:hover {
-    font-weight: bold;
-    color: red;
+.whitebutton {
+    background-color: white;
+    border: 2px solid rgba(192, 188, 188, 0.87);
+    padding: 10px
 }
+
+    .whitebutton:hover {
+        border: 2px solid black;
+        color: black;
+    }
+
+.blackbutton {
+    background-color: black;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+    .blackbutton:hover {
+        background-color: red;
+    }
 
 #carouselEX img {
     width: 1093.6px;
