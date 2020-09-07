@@ -129,3 +129,5 @@ ClientBin/
 *.publishsettings
 orleans.codegen.cs
 
+# Cient-side libraries
+wwwroot/lib
