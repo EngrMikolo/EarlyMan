@@ -17,13 +17,15 @@
     <nav class="TempNav">
         <div class="container-s">
             <div id="branding">
-                <h1> <a class="branding">EARLYMAN</a></h1>
+                <h1> <a class="branding">EARLYMAN Inc.</a></h1>
             </div>
             <div class="navigation">
                 <ul>
-                    <li>  <a asp-controller="Home" asp-action="SignIn">Sign in</a></li>
-                    <li><a asp-page="/ShoppingCart"><i class="fa fa-shopping-cart"></i></a></li>
-                    <li> <a asp-page="/Settings">Settings</a></li>
+
+                    <li> <a asp-action="Artists">Artists</a></li>
+                    <li><a asp-action="ShoppingCart"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li>  <a class="whitebutton" asp-controller="Home" asp-action="SignIn">Sign In</a></li>
+                    <li> <a class="blackbutton text-white" asp-controller="Account" asp-action="CreateAcc"> Create Account</a></li>
 
                     @*<li>
                         <div class="dropdown">
@@ -70,7 +72,7 @@
                 <td><a href="mailto:davidokeke.c@gmail.com">Help</a></td>
             </tr>
         </table>
-        <div class="text-white text-center"> Earlyman Inc.&copy; All rights reserved.</div>
+        <div class="text-white text-center">&copy; 2020 Earlyman Inc. All rights reserved </div>
     </footer>
     <script src="~/lib/jquery/jquery.slim.min.js"></script>
     <script src="~/lib/popper.js/umd/popper.min.js"></script>

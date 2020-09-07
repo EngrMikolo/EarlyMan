@@ -3,24 +3,24 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/AdminStyleSheet.css"/>
+    <link rel="stylesheet" href="~/css/UserStyleSheet.css" />
 </head>
-<body style="background-color:dimgrey">
-    <div class="pull-left">
-        <a class="btn btn-outline-warning" asp-action="Index">Home</a>
-    </div>
-    <form action="/" method="post">
+<body>
+    <img class="container" src="~/assets/logo.png" alt="Logo" />
+    <form class="container" action="/" method="post">
         <div class="container">
-            <label for="Id"><b>ID</b></label>
+            <div><label for="Id"><b>Email</b></label></div>
 
-            <input type="text" name="Name" placeholder="Enter Id" />
+            <input type="text" name="Name" placeholder="Enter Email" />
         </div>
         <div class="container">
-            <label for="psw"><b>Password</b></label>
+            <div> <label for="psw"><b>Password</b></label></div>
 
             <input type="password" name="Password" placeholder="Enter Password" required />
         </div>
         <button type="submit">Log In</button>
     </form>
+    <p class="container">New to Earlyman Inc.?</p>
+    <a class="whitebutton" asp-controller="Customer" asp-action="Create">Create Account</a>
 </body>
 </html>
