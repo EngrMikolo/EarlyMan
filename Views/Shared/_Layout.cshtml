@@ -22,10 +22,20 @@
             <div class="navigation">
                 <ul>
 
-                    <li> <a asp-action="Artists">Artists</a></li>
-                    <li><a asp-action="ShoppingCart"><i class="fa fa-shopping-cart"></i></a></li>
-                    <li>  <a class="whitebutton" asp-controller="Home" asp-action="SignIn">Sign In</a></li>
-                    <li> <a class="blackbutton text-white" asp-controller="Account" asp-action="CreateAcc"> Create Account</a></li>
+                    <li>
+                        <a asp-action="Artists">Artists</a>
+                    </li>
+                    <li>
+                        <a asp-action="ShoppingCart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="whitebutton" asp-controller="User" asp-action="SignIn">Sign In</a>
+                    </li>
+                    <li>
+                        <a class="blackbutton text-white" asp-controller="User" asp-action="CreateAccount">Create Account</a>
+                    </li>
 
                     @*<li>
                         <div class="dropdown">

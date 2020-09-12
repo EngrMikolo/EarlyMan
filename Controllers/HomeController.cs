@@ -26,7 +26,5 @@ namespace Telefin.Controllers
         public ViewResult ProductShowcase() => View(homePageVM);
 
         public ViewResult ItemSummary() => View();
-
-        public ViewResult SignIn() => View();
     }
 }
