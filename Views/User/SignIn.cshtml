@@ -3,28 +3,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/UserStyleSheet.css" />
+
+    <link rel="stylesheet" href="~/css/LoginStyleSheet.css" />
 </head>
 <body>
-    <a asp-controller="Home" asp-action="Index">
-        <img class="container" src="~/assets/logo.png" alt="Logo" />
-    </a>
 
-    <form asp-controller="User" asp-action="Login" class="container" method="post">
-        <div class="container">
-            <div><label asp-for="Email"><b>Email</b></label></div>
+    <div>
+        <a class="blackbutton" asp-controller="Home" asp-action="Index">
+            Home
+        </a>
+        <div class="loginC">
+            <form asp-controller="User" asp-action="Login" class="container" method="post">
+                <h3>Sign In</h3>
+                <div>
+                    <div class="labelL"><label asp-for="Email"><b>Email</b></label></div>
 
-            <input asp-for="Email" type="text" name="Name" placeholder="Enter Email" required />
+                    <input asp-for="Email" type="text" name="Name" placeholder="Enter Email" required />
+                </div>
+                <div>
+                    <div class="labelL"> <label asp-for="Password"><b>Password</b></label></div>
+
+                    <input asp-for="Password" type="password" name="Password" placeholder="Enter Password" required />
+                </div>
+                <button type="submit">Log In</button>
+                <div id="coOfUse">By continuing, you agree to Earlyman's <a href="#">Conditions of Use</a>.</div>
+            </form>
+            <div>
+                <p>New to Earlyman Inc.?</p>
+                <a class="whitebutton" asp-controller="Customer" asp-action="Create">Create Account</a>
+            </div>
         </div>
-        <div class="container">
-            <div> <label asp-for="Password"><b>Password</b></label></div>
-
-            <input asp-for="Password" type="password" name="Password" placeholder="Enter Password" required />
-        </div>
-        <button type="submit">Log In</button>
-    </form>
-    <p class="container">New to Earlyman Inc.?</p>
-    <a class="whitebutton" asp-controller="Customer" asp-action="Create">Create Account</a>
+    </div>
 </body>
 </html>

@@ -1,55 +1,54 @@
-﻿body {
-    font-family: Arial,Arial;
-    width: 25%;
-    margin: auto;
-    padding-top: 10px;
-}
-
-img {
-    width: 50%;
-}
-
-form {
-    border: 1px solid #808080;
-    margin: auto;
-    width: auto;
-    border-radius: 2%;
-}
-
-input[type=text],
-input[type=password] {
-    width: auto;
-    padding: 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
+﻿/*Global*/
+* {
     box-sizing: border-box;
 }
 
-    input[type=text]:hover,
-    input[type=password]:hover {
-        border: 1px solid red;
-        box-shadow: 3px;
-    }
-
-    input[type=text]:focus,
-    input[type=password]:focus {
-        border: 1px solid rgba(185, 25, 25, 0.40);
-    }
-
-label {
-    display: inline;
-    font: 12px;
+form {
+    margin-bottom: 10px
 }
 
+body {
+    font-family: Arial,Arial;
+    font-size: 13px;
+}
+
+h3 {
+    text-align: left;
+    font-family: Arial;
+    font-size: 28px;
+}
+
+.labelL {
+    padding: 10px 0 5px 0;
+}
+
+.loginC {
+    border: 1px solid #d2d2d2;
+    margin: auto;
+    width: 348px;
+    border-radius: 4px;
+    padding: 14px 18px 14px 18px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+p {
+    text-align: center;
+    font: 8px;
+}
+/*Buttons*/
 button {
     background-color: rgba(76, 175, 80, 0.50);
     border-radius: 4px;
     color: white;
     padding: 10px;
-    margin: 15px;
+    margin-top: 10px;
     border: none;
     cursor: pointer;
-    width: 80%;
+    width: 100%;
 }
 
     button:hover {
@@ -57,26 +56,38 @@ button {
     }
 
 .whitebutton {
-    color: black;
     background-color: white;
+    border-radius: 4px;
+    color: black;
+    padding: 10px;
     border: 2px solid rgba(192, 188, 188, 0.87);
-    padding: 10px 10px 10px 10px;
-    width: 100%;
-    margin: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
-p {
-    font: 8px;
+.blackbutton {
+    background-color: black;
+    border: 2px solid black;
+    padding: 10px;
+    width: auto;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
+
+    .blackbutton:hover {
+        background-color: red;
+    }
 
 .whitebutton:hover {
     border: 2px solid black;
-    color: black;
+    color: red;
     background-color: white;
     text-decoration: none;
 }
 
-.container {
-    padding: 16px;
-    margin: auto;
+#coOfUse {
+    padding-top: 10px;
 }
